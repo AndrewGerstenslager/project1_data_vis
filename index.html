@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 1 - US County Data</title>
+    <link rel="icon" href="cool.png" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center><h2>Interactive Exploration of U.S. County Health and Demographic Data</h2></center>
+    <center>
+        <h3>
+            This project offers an interactive exploration tool for visualizing health and 
+            demographic data across U.S. counties including 
+            poverty levels, median household income, education levels, air quality, and health 
+            metrics into a single, interactive platform, users can gain insights into the diverse 
+            conditions affecting different regions of the United States.
+        </h3>
+    </center>
+    <center>
+        <h3>
+            Select values from each dropdown to compare different types of demographic data!
+        </h3>
+    </center>
+    
+    <div class="maps-wrapper">
+        <div class="map-container">
+            <select id="dropdown1"></select>
+            <div class="viz"></div>
+        </div>
+        <div class="map-container">
+            <select id="dropdown2"></select>
+            <div class="viz2"></div>
+        </div>
+    </div>
+
+    <div class="charts-container">
+        <div class="histogram-container">
+            <div class="graph1"></div>
+        </div>
+
+        <div class="scatterplot-container">
+            <div class="scatter1"></div>
+        </div>
+
+        <div class="histogram-container">
+            <div class="graph2"></div>
+        </div>
+    </div>
+
+
+    <svg height="5" width="5" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <pattern id="lightstripe" patternUnits="userSpaceOnUse" width="5" height="5"> <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg==" x="0" y="0" width="5" height="5"> </image> </pattern> </defs></svg>
+
+    <div id="tooltip"></div>
+    <script src="js/topojson.v3.js"></script>
+
+    
+    <script src="js/d3.v6.min.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/scatter.js"></script>
+    <script src="js/choroplethMap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

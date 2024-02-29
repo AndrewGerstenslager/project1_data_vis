@@ -1,0 +1,16 @@
+    // // Append dropdown for property selection
+    // d3.select(vis.config.parentElement)
+    //   .append('select')
+    //   .attr('class', 'property-select')
+    //   .on('change', function() {
+    //     vis.config.currentProperty = this.value;
+    //     // Update the color scale domain based on the new property
+    //     vis.colorScale.domain(d3.extent(vis.data.objects.counties.geometries, d => d.properties[vis.config.currentProperty]));
+    //     vis.updateVis();
+    //   })
+    //   .selectAll('option')
+    //   .data(vis.propertyNames.filter(d => d !== 'cnty_fips' && d !== 'display_name'))
+    //   .enter()
+    //   .append('option')
+    //   .text(d => d)
+    //   .attr('value', d => d);

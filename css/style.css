@@ -1,0 +1,110 @@
+.background {
+            fill: none;
+            pointer-events: all;
+}
+
+#states {
+    fill: #aaa;
+}
+
+#states .active {
+    display:none;
+}
+
+#state-borders {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+.county-boundary {
+    fill: gray;
+    stroke: #fff;
+    stroke-width: .5px;
+}
+
+.county-boundary:hover, .state:hover {
+    fill: orange;
+}
+
+#tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto; /* Adjust based on your content */
+    padding: 8px;
+    font: 14px sans-serif;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10; /* Ensure it's above other elements */
+  }
+.tooltip-title {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.map-container {
+    position: relative;
+    width: 800px; /* Or whatever your map width is */
+    margin: auto; /* Center the container */
+}
+
+.property-select {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the dropdown */
+    bottom: -30px; /* Adjust as needed to place below the map */
+}
+
+.maps-wrapper {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: start; /* Align items to the start of the container */
+    gap: 20px; /* Optional: Adds some space between the two maps */
+}
+
+.map-container {
+    flex: 1; /* Makes each map container take up equal space */
+    /* Adjust width as necessary, or remove if using flex-basis */
+}
+
+.property-select {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px; /* Adjust based on your layout */
+}
+
+#dropdown1, #dropdown2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Adjust as needed */
+  }
+
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.histogram-container, .scatterplot-container {
+    flex: 1 0 30%; /* grow, don't shrink, start at 30% of the container width */
+    max-width: 30%; /* ensure that the width doesn't grow beyond 30% */
+}
+
+
+.histogram-container {
+    height: 300px; /* adjust as needed */
+}
+
+.scatter-container {
+    height: 300px; /* adjust as needed */
+}
