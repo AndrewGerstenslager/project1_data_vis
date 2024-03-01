@@ -62,6 +62,6 @@ I had a few challenges with adding event handlers for the dropdowns for all the 
 
 ## Demo Video
 
-[Watch the demo video](link-to-demo-video)
+[Watch the demo video](screen-capture.webm)
 
 This 2-3 minute demo video shows the application in action. It includes a voiceover that explains the application and its components.
